@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="index.css">
+    <script src="script.js"></script>
+    <title>Sagar Badgujar</title>
+</head>
+
+<body>
+    <header class="container">
+        <div class="page-header">
+            <div class="logo">
+                <a href="index.html">SAGAR</a>
+            </div>
+            <input type="checkbox" id="click">
+
+            <label for="click" class="mainicon">
+                <div class="menu">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </label>
+            <ul>
+                <li><a href="index.html"  class="active" style="--navAni:1">Home</a></li>
+                <li><a href="education.html" style="--navAni:2">Education</a></li>
+                <li><a href="work.html" style="--navAni:3">Work</a></li>
+                <li><a href="contact.html" style="--navAni:5">Contact</a></li>
+            </ul>
+            <label class="mode">
+                <input type="checkbox" id="darkModeToggle">
+                <i class='bx bxs-moon'></i>
+            </label>
+        </div>
+    </header>
+
+
+    <section class="container">
+        <div class="main">
+            <div class="images" onclick="openModal()"> <!-- Add onclick attribute here -->
+                <img src="person.png" alt="" class="img-w">
+                <span class="bg-effect-1">
+                    <span class="bg-effect-1"></span>
+                </span>
+            </div>
+            <div class="detail">
+                <h3>Hi, I'm</h3>
+                <h1><span style="color:#f9532d;">Sagar</span> Badgujar</h1> 
+                <p>Click the image to know more about me.
+                </p>  
+                <div class="social">
+                    <a href="https://www.linkedin.com/in/sagar-badgujar-31m08y2001/" style="--socialAni:1"><i class='bx bxl-linkedin'></i></a>
+                    <a href="https://github.com/sagar3181" style="--socialAni:3"><i class='bx bxl-github'></i></a>
+                    <a href="https://sagar3181.github.io/sagarbadgujar.github.io/" style="--socialAni:4"><i class='bx bx-search'></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>About Me</h2>
+            <p>
+                Enthusiastic computer science engineer with a solid academic background in computer science and machine learning. I am eager to leverage my theoretical knowledge to tackle real-world challenges and make meaningful contributions to leading-edge computer science projects. Proficient in self-directed learning, I have a proven track record of creating computer science solutions through both personal projects and coursework. I am actively seeking an opportunity to launch my career in computer science engineering, aiming to bring my innovative spirit to a dynamic team.</p>
+        </div>
+    </div>
+
+    <footer class="container">
+        <div class="copyright">
+            <p>&copy; 2023 Your Company. All rights reserved. <span class="trademark">&trade;</span></p>
+        </div>
+    </footer>
+</body>
+
+</html>

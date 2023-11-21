@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="index.css">
+    <script src="script.js"></script>
+    <title>Sagar Badgujar</title>
+</head>
+
+<body>
+    <header class="container">
+        <div class="page-header">
+            <div class="logo">
+                <a href="index.html">SAGAR</a>
+            </div>
+            <input type="checkbox" id="click">
+
+            <label for="click" class="mainicon">
+                <div class="menu">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </label>
+            <ul>
+                <li><a href="index.html"  class="active" style="--navAni:1">Home</a></li>
+                <li><a href="education.html" style="--navAni:2">Education</a></li>
+                <li><a href="work.html" style="--navAni:3">Work</a></li>
+                <li><a href="contact.html" style="--navAni:5">Contact</a></li>
+            </ul>
+            <label class="mode">
+                <input type="checkbox" id="darkModeToggle">
+                <i class='bx bxs-moon'></i>
+            </label>
+        </div>
+    </header>
+
+    <div class="contact_container">
+        <h2>Contact Me</h2>
+        <form action="https://formspree.io/f/mknlaeqo" method="POST" id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+    
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+    
+            <input type="hidden" id="name_field" name="name_field">
+            <input type="hidden" id="email_field" name="email_field">
+            <input type="hidden" id="message_field" name="message_field">
+    
+            <button type="button" onclick="submitForm()">Submit</button>
+        </form>
+    </div>
+    <footer class="container">
+        <div class="copyright">
+            <p>&copy; 2023 Your Company. All rights reserved. <span class="trademark">&trade;</span></p>
+        </div>
+    </footer>
+</body>
+
+</html>
